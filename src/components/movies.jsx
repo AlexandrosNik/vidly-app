@@ -15,7 +15,7 @@ class Movies extends Component {
         currentPage:1,
         sortColumn: {path: 'title', order: 'asc'}
     };
-
+    
     componentDidMount() {
         const genres = [{name:'All Genres'},...getGenres()];
         this.setState({movies: getMovies(), genres, selectedGenre:genres[0]});
@@ -43,6 +43,7 @@ class Movies extends Component {
     }
 
     handleSort = sortColumn => {
+        console.log(sortColumn)
         this.setState({ sortColumn });
     }
 
