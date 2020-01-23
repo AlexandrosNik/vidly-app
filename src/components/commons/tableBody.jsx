@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import Like from './commons/like';
 import _ from 'lodash';
  
 //movies: objArray
